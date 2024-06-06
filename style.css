@@ -1,0 +1,124 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header {
+    z-index: 1;
+    width: 500px;
+    height: 600px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 34px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 34px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 34px -6px rgba(0, 0, 0, 0.75);
+}
+
+.header h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #0ba6ff;
+}
+
+.header img {
+    width: 200px;
+}
+
+.header .input-el {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.header .input-el input {
+    width: 240px;
+    height: 40px;
+    font-family: "Roboto",
+        sans-serif;
+    border-radius: 10px;
+    border: 2px solid #0ba6ff;
+    padding-left: 10px;
+    outline: none;
+}
+
+.header button {
+    padding: 10px 30px;
+    border: none;
+    background-color: #0ba6ff;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.header button:hover {
+    background-color: #1c7ab1;
+    transition: 0.3s;
+}
+
+.header p {
+    align-self: self-start;
+    margin-left: 20%;
+    color: #0ba6ff;
+    font-size: 18px;
+    width: 350px;
+    height: 20px;
+}
+
+.header #text-import {
+    color: red;
+    margin: 0;
+    padding-right: 20px;
+}
+
+#text-import:first-line {
+    color: #0ba6ff;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .header {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header p {
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    .header #text-import{
+        font-size: 18px;
+    }
+}
