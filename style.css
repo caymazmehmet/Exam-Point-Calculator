@@ -114,11 +114,31 @@ input::-webkit-inner-spin-button {
     }
 
     .header p {
-        padding-left: 20px;
-        margin: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+
     }
 
-    .header #text-import{
+    .header #text-import {
         font-size: 18px;
+    }
+
+    .header .input-el input {
+        width: 340px;
+        height: 60px;
+        font-size: 15px;
+        font-size: 16px;
+    }
+
+    .header button {
+        padding: 20px 50px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 16px;
+    }
+
+    .header .input-el {
+        margin-top: 40px;
+        gap: 20px;
     }
 }
